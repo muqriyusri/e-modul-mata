@@ -6,102 +6,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MODUL E-M.A.T.A</title>
+  <title>E-MODUL M.A.T.A</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fa;
-      color: #333;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-    header {
-      background: #004080;
-      color: white;
-      padding: 3px;
-      text-align: center;
-    }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f9ff;
+  color: #333;
+  text-align: center;
+  scroll-behavior: smooth;
+}
 
-    nav {
-      background: #007acc;
-      padding: 10px;
-      text-align: center;
-    }
+header {
+  background: linear-gradient(to right, #004080, #0066cc);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+header h1 {
+  font-size: 2.2em;
+  margin: 0;
+  animation: fadeInDown 1s ease-out;
+}
 
-    section {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-    }
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
 
-    h2 {
-      color: #004080;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
+nav {
+  background: #007acc;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #28a745;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      margin: 10px 0;
-    }
+nav a {
+  padding: 10px 22px;
+  margin: 0 8px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: #005fa3;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
 
-    .button:hover {
-      background: #218838;
-    }
+nav a:hover {
+  background-color: #003f7f;
+  transform: scale(1.05);
+}
 
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 8px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+section {
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 1000px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
 
-    form button {
-      background: #007acc;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+section:hover {
+  transform: translateY(-3px);
+}
 
-    form button:hover {
-      background: #005fa3;
-    }
+h2 {
+  background: linear-gradient(to right, #cceeff, #e6f7ff);
+  padding: 12px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #f1f1f1;
-      margin-top: 30px;
-    }
+.mission-card {
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  border: 3px solid #007acc;
+  border-radius: 25px;
+  padding: 35px;
+  margin: 20px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.mission-icon {
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  margin-top: 15px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #28a745;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+form {
+  background: #f0f8ff;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #007acc;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+form button {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #005fa3;
+}
+
+iframe {
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+iframe:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  background: #f1f1f1;
+  padding: 25px;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px auto;
+  }
+
+  section {
+    padding: 25px;
+  }
+
+  iframe {
+    width: 90% !important;
+    height: auto;
+  }
+}
+
+
   </style>
 </head>
 <body>
 
 <header>
   <h1>
-  MODUL E-M.A.T.A <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/798ea16f-b6ef-4df3-9bef-9b7f2e2cc752/djeqn8e-fe465df2-9ea4-4626-9b3f-69296a227ab1.png/v1/fit/w_828,h_1104/ali_from_ejen_ali_season_3_new_render_png_mk2_by_boyfermediaarts_djeqn8e-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcLzc5OGVhMTZmLWI2ZWYtNGRmMy05YmVmLTliN2YyZTJjYzc1MlwvZGplcW44ZS1mZTQ2NWRmMi05ZWE0LTQ2MjYtOWIzZi02OTI5NmEyMjdhYjEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.QvSuqHehNJ35IIMh1uEM3af9A1Xd6BMHpOwWlCR55IQ" class="mission-icon" 
+  E-MODUL M.A.T.A <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/798ea16f-b6ef-4df3-9bef-9b7f2e2cc752/djeqn8e-fe465df2-9ea4-4626-9b3f-69296a227ab1.png/v1/fit/w_828,h_1104/ali_from_ejen_ali_season_3_new_render_png_mk2_by_boyfermediaarts_djeqn8e-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcLzc5OGVhMTZmLWI2ZWYtNGRmMy05YmVmLTliN2YyZTJjYzc1MlwvZGplcW44ZS1mZTQ2NWRmMi05ZWE0LTQ2MjYtOWIzZi02OTI5NmEyMjdhYjEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.QvSuqHehNJ35IIMh1uEM3af9A1Xd6BMHpOwWlCR55IQ" class="mission-icon" 
       width="150"
   height="150"></h1>
   
 </header>
+<head>
+  <title>Judul Halaman</title>
+  <style>
+    div {
+      width: 800px;
+      height: 200px;
 
+      background-color: rgb(130, 123, 255);
+      border-radius: 5%;
+    }
+  </style>
+</head>
 <nav>
   <a href="#interface">Muka Hadapan</a>
   <a href="#pengenalan">Pengenalan</a>
@@ -112,19 +220,14 @@
 </nav>
 <section>
   <div class="mission-card">
-    <h2>Misi Modul E-M.A.T.A
+    <h2>Misi E-Modul M.A.T.A
     </h2>
     <p>Selamat datang, agen pelatih! Misi anda ialah untuk menakluk topik Pemfaktoran dan Pecahan Algebra dengan menggunakan alatan digital. Klik pautan di navigasi untuk memulakan!</p>
   </div>
 </section>
 <section id="interface">
-  <h2>Muka Hadapan</h2>
-  <p>Selamat datang ke Modul E-M.A.T.A! Modul ini disusun khas untuk membantu pelajar memahami topik Pemfaktoran dan Pecahan Algebra Matematik Tingkatan 2 dengan lebih mudah dan menyeronokkan.</p>
-</section>
-
-<section id="pengenalan">
-  <h2>Pengenalan</h2>
-  <p>Modul ini dibangunkan bagi meningkatkan penguasaan pelajar terhadap topik Pemfaktoran dan Pecahan Algebra melalui pendekatan interaktif dan visual. Ia disertakan dengan nota padat, latihan berasaskan laman web serta ruangan refleksi untuk membantu guru menilai kefahaman pelajar.</p>
+  <h2>SELAMAT DATANG EJEN M.A.T.A</h2>
+  <p>Dalam era digital masa kini, pendekatan konvensional semata-mata tidak lagi mencukupi untuk menarik minat dan meningkatkan kefahaman pelajar. Justeru itu, inovasi dalam pengajaran dan pembelajaran seperti penggunaan modul digital yang interaktif dan mesra pengguna sangat diperlukan bagi menangani cabaran ini. Salah satu usaha ke arah ini adalah pembangunan E-Modul M.A.T.A., yang direka khusus untuk membantu pelajar Tingkatan Dua menguasai topik pemfaktoran dan pecahan algebra secara lebih berkesan melalui pendekatan visual, multimedia dan latihan kendiri.</p>
 </section>
 
 <section id="nota">
@@ -138,15 +241,28 @@
       </ul>
       <p>Gunakan nota ini untuk memahami langkah demi langkah dalam pemfaktoran.</p>
 
-  <p>Nota tersedia dalam dua format:</p>
+  <p>Slaid Nota:</p>
   <ul>
-<body>
-  <iframe src="https://drive.google.com/file/d/1NuCgrP30VPD9NqWbR4isVgQs77K81IgD/view?usp=sharing" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</body>
 
-    <li><a href="https://www.example.com/nota-powerpoint" class="button" target="_blank">Nota PowerPoint</a></li>
+
+
+<iframe width="560" height="310" src="https://online.anyflip.com/zuiuf/eect/mobile/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
   </ul>
-</section>
+<p>Video Pengajaran:</p>
+
+<iframe width="280" height="157.5" src="https://www.youtube.com/embed/MHv6vtnOtgg?si=X1ohsBV4c9z144Sg&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="280" height="157.5" src="https://www.youtube.com/embed/Zl_PN675l1Y?si=IoMvvgNdiYtRCVdw&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="280" height="157.5" src="https://www.youtube.com/embed/JwPXHi6TRPI?si=h5EDBmkcGnDvOX3h&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <iframe width="280" height="157.5" src="https://www.youtube.com/embed/se8hBzdnyqY?si=WAWgoHb3FieUyqDT&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="280" height="157.5" src="https://www.youtube.com/embed/JLoAjV92LuU?si=8DeLg1CxgxWQ7MdB&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="280" height="157.5" src="https://www.youtube.com/embed/ORFdGQtAfnM?si=KbkEPskBSpIIsy3S&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <iframe width="280" height="157.5" src="https://www.youtube.com/embed/_mr4Zubh69c?si=T8dBDS0hDQlt8ROu&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="280" height="157.5" src="https://www.youtube.com/embed/4KfmnXHsrfU?si=8ASeQVhlimcnghHl&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="280" height="157.5" src="https://www.youtube.com/embed/xllrKBPWga8?si=TIz_rQ0v1Zee2cGJ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <section id="latihan">
   <h2>Misi Utama</h2>
@@ -154,6 +270,7 @@
   <a href="https://quizizz.com/admin/quiz/684988d09bc8560179421a72" class="button" target="_blank">Misi 1</a>
   <a href="https://wordwall.net/resource/39321694/faktor-sepunya/" class="button" target="_blank">Misi 2</a>
   <a href="https://wordwall.net/resource/39322017/pemfaktoran" class="button" target="_blank">Misi 3</a>
+  <p></p>
   <h2>Misi Rahsia</h2>
   <p>Tekan butang di bawah untuk menjalankan misi anda:</p>
   <a href="https://drive.google.com/file/d/1hYvFgJls3FH0mn03-bv31cNCPWzAMUDT/view?usp=drivesdk" class="button" target="_blank">Misi Rahsia</a>
