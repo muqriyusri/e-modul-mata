@@ -1,308 +1,174 @@
+</body>
+</html>
+
 <!DOCTYPE html>
 <html lang="ms">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>E-Modul M.A.T.A. - Pemfaktoran Algebra T2</title>
+  <title>MODUL E-M.A.T.A</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4f8;
       margin: 0;
       padding: 0;
+      background: #f5f7fa;
+      color: #333;
     }
 
     header {
-      background-color: #2563eb;
+      background: #004080;
       color: white;
-      padding: 20px;
+      padding: 3px;
       text-align: center;
     }
 
     nav {
-      background-color: #2e48a0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px;
-      flex-wrap: wrap;
+      background: #007acc;
+      padding: 10px;
+      text-align: center;
     }
 
     nav a {
       color: white;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
     section {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    section h2 {
-      color: #1e3a8a;
-    }
-
-    footer {
-      background-color: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-
-    .btn {
-      background-color: #2563eb;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    .btn:hover {
-      background-color: #1d4ed8;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>E-Modul M.A.T.A.</h1>
-    <p>Matematik Algebra Tingkatan 2 – Pemfaktoran</p>
-  </header>
-
-  <nav>
-    <a href="#nota">Nota</a>
-    <a href="#latihan">Latihan</a>
-    <a href="#aktiviti">Aktiviti Interaktif</a>
-    <a href="#kuiz">Kuiz</a>
-    <a href="#guru">Ruang Guru</a>
-  </nav>
-
-  <main>
-
-    <section id="nota">
-      <h2>📘 Nota: Pemfaktoran Algebra</h2>
-      <p><strong>Pemfaktoran</strong> bermaksud menulis satu ungkapan algebra dalam bentuk hasil darab.</p>
-      <h4>Jenis-jenis Pemfaktoran:</h4>
-      <ul>
-        <li>Pemfaktoran sepunya – cth: 3x + 6 = 3(x + 2)</li>
-        <li>Pemfaktoran perbezaan dua kuasa dua – cth: x² - 9 = (x + 3)(x - 3)</li>
-        <li>Pemfaktoran trinom – cth: x² + 5x + 6 = (x + 2)(x + 3)</li>
-      </ul>
-      <p>Gunakan nota ini untuk memahami langkah demi langkah dalam pemfaktoran.</p>
-    </section>
-
-    <section id="latihan">
-      <h2>📝 Latihan</h2>
-      <p>Latihan berdasarkan tahap kesukaran:</p>
-      <ul>
-        <li><strong>Latihan 1:</strong> Kenalpasti faktor sepunya</li>
-        <li><strong>Latihan 2:</strong> Gunakan hukum perbezaan kuasa dua</li>
-        <li><strong>Latihan 3:</strong> Pemfaktoran trinom & kuadratik</li>
-      </ul>
-      <p>Muat turun latihan dalam bentuk PDF:</p>
-      <a href="Latihan_Pemfaktoran.pdf" class="btn">Muat Turun Latihan</a>
-    </section>
-
-    <section id="aktiviti">
-      <h2>🧩 Aktiviti Interaktif</h2>
-      <p>Aktiviti interaktif membantu pelajar meneroka pemfaktoran secara visual:</p>
-      <ul>
-        <li>Padankan pasangan pemfaktoran</li>
-        <li>Seret dan lepaskan faktor ke tempat yang betul</li>
-        <li>Jana bentuk faktoran secara automatik</li>
-      </ul>
-      <p>Lihat contoh aktiviti:</p>
-      <iframe src="https://www.geogebra.org/material/iframe/id/abc123/width/700/height/400/border/888" width="100%" height="400" style="border: none;"></iframe>
-    </section>
-
-    <!DOCTYPE html>
-<html lang="ms">
-<head>
-  <meta charset="UTF-8">
-  <title>Aktiviti Interaktif - Padankan Pemfaktoran</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      margin: 0;
-      padding: 20px;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
     }
 
     h2 {
-      text-align: center;
-      color: #1e3a8a;
-    }
-
-    .container {
-      display: flex;
-      justify-content: space-around;
-      max-width: 1000px;
-      margin: auto;
-      flex-wrap: wrap;
-    }
-
-    .column {
-      flex: 0 0 45%;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      min-width: 300px;
-    }
-
-    .item {
-      background: #c7d2fe;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      cursor: grab;
-    }
-
-    .dropzone {
-      background: #f1f5f9;
-      padding: 20px;
-      margin: 15px 0;
-      border: 2px dashed #94a3b8;
-      border-radius: 5px;
-      min-height: 50px;
-      transition: background-color 0.3s;
-    }
-
-    .correct {
-      background-color: #d1fae5 !important;
-    }
-
-    .wrong {
-      background-color: #fecaca !important;
+      color: #004080;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
 
     .button {
-      display: block;
-      margin: 30px auto;
+      display: inline-block;
       padding: 10px 20px;
-      font-size: 16px;
-      background-color: #2563eb;
+      background: #28a745;
       color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 10px 0;
     }
 
     .button:hover {
-      background-color: #1e40af;
+      background: #218838;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
 
-<h2>🧠 Aktiviti Interaktif: Padankan Soalan dengan Jawapan</h2>
+<header>
+  <h1>
+  MODUL E-M.A.T.A <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/798ea16f-b6ef-4df3-9bef-9b7f2e2cc752/djeqn8e-fe465df2-9ea4-4626-9b3f-69296a227ab1.png/v1/fit/w_828,h_1104/ali_from_ejen_ali_season_3_new_render_png_mk2_by_boyfermediaarts_djeqn8e-414w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcLzc5OGVhMTZmLWI2ZWYtNGRmMy05YmVmLTliN2YyZTJjYzc1MlwvZGplcW44ZS1mZTQ2NWRmMi05ZWE0LTQ2MjYtOWIzZi02OTI5NmEyMjdhYjEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.QvSuqHehNJ35IIMh1uEM3af9A1Xd6BMHpOwWlCR55IQ" class="mission-icon" 
+      width="150"
+  height="150"></h1>
+  
+</header>
 
-<div class="container">
-  <!-- Soalan -->
-  <div class="column">
-    <h3>Soalan</h3>
-    <div class="dropzone" data-answer="(x + 2)(x + 3)">x² + 5x + 6</div>
-    <div class="dropzone" data-answer="(x + 4)(x - 4)">x² - 16</div>
-    <div class="dropzone" data-answer="5x(x - 2)">5x² - 10x</div>
+<nav>
+  <a href="#interface">Muka Hadapan</a>
+  <a href="#pengenalan">Pengenalan</a>
+  <a href="#nota">Nota</a>
+  <a href="#latihan">Latihan Interaktif</a>
+  <a href="#refleksi">Refleksi</a>
+  <a href="#sijil">Sijil</a>
+</nav>
+<section>
+  <div class="mission-card">
+    <h2>Misi Modul E-M.A.T.A
+    </h2>
+    <p>Selamat datang, agen pelatih! Misi anda ialah untuk menakluk topik Pemfaktoran dan Pecahan Algebra dengan menggunakan alatan digital. Klik pautan di navigasi untuk memulakan!</p>
   </div>
+</section>
+<section id="interface">
+  <h2>Muka Hadapan</h2>
+  <p>Selamat datang ke Modul E-M.A.T.A! Modul ini disusun khas untuk membantu pelajar memahami topik Pemfaktoran dan Pecahan Algebra Matematik Tingkatan 2 dengan lebih mudah dan menyeronokkan.</p>
+</section>
 
-  <!-- Jawapan -->
-  <div class="column">
-    <h3>Jawapan</h3>
-    <div class="item" draggable="true" data-value="(x + 2)(x + 3)">(x + 2)(x + 3)</div>
-    <div class="item" draggable="true" data-value="5x(x - 2)">5x(x - 2)</div>
-    <div class="item" draggable="true" data-value="(x + 4)(x - 4)">(x + 4)(x - 4)</div>
-  </div>
-</div>
+<section id="pengenalan">
+  <h2>Pengenalan</h2>
+  <p>Modul ini dibangunkan bagi meningkatkan penguasaan pelajar terhadap topik Pemfaktoran dan Pecahan Algebra melalui pendekatan interaktif dan visual. Ia disertakan dengan nota padat, latihan berasaskan laman web serta ruangan refleksi untuk membantu guru menilai kefahaman pelajar.</p>
+</section>
 
-<button class="button" onclick="checkAnswers()">Semak Jawapan</button>
+<section id="nota">
+  <h2>Nota</h2>
+  <p>Nota tersedia dalam dua format:</p>
+  <ul>
+    <li><a href="https://www.canva.com/" class="button" target="_blank">Nota Canva</a></li>
+    <li><a href="https://www.example.com/nota-powerpoint" class="button" target="_blank">Nota PowerPoint</a></li>
+  </ul>
+</section>
 
-<script>
-  const items = document.querySelectorAll('.item');
-  const dropzones = document.querySelectorAll('.dropzone');
+<section id="latihan">
+  <h2>Misi Utama</h2>
+  <p>Tekan butang di bawah untuk untuk menjalankan misi anda:</p>
+  <a href="https://quizizz.com/admin/quiz/684988d09bc8560179421a72" class="button" target="_blank">Misi 1</a>
+  <a href="https://wordwall.net/resource/39321694/faktor-sepunya/" class="button" target="_blank">Misi 2</a>
+  <a href="https://wordwall.net/resource/39322017/pemfaktoran" class="button" target="_blank">Misi 3</a>
+  <h2>Misi Rahsia</h2>
+  <p>Tekan butang di bawah untuk menjalankan misi anda:</p>
+  <a href="https://drive.google.com/file/d/1hYvFgJls3FH0mn03-bv31cNCPWzAMUDT/view?usp=drivesdk" class="button" target="_blank">Misi Rahsia</a>
+</section>
 
-  // Set up drag
-  items.forEach(item => {
-    item.addEventListener('dragstart', (e) => {
-      e.dataTransfer.setData('text/plain', item.getAttribute('data-value'));
-    });
-  });
+<section id="refleksi">
+  <h2>Refleksi</h2>
+  <form action="#">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
 
-  // Set up dropzone
-  dropzones.forEach(zone => {
-    zone.addEventListener('dragover', (e) => {
-      e.preventDefault(); // this is crucial to allow dropping!
-    });
+    <label for="komen">Refleksi anda mengenai modul ini:</label>
+    <textarea id="komen" name="komen" rows="5" required></textarea>
 
-    zone.addEventListener('drop', (e) => {
-      e.preventDefault();
-      const droppedText = e.dataTransfer.getData('text/plain');
-      zone.setAttribute('data-user', droppedText);
-      zone.innerHTML = droppedText;
-      zone.classList.remove('correct', 'wrong');
-    });
-  });
+    <button type="submit">Hantar Refleksi</button>
+  </form>
+</section>
 
-  // Check answers
-  function checkAnswers() {
-    dropzones.forEach(zone => {
-      const correct = zone.getAttribute('data-answer');
-      const user = zone.getAttribute('data-user');
+<section id="sijil">
+  <h2>Sijil</h2>
+  <p>Terima kasih kerana melengkapkan modul ini. Sila klik pautan di bawah untuk muat turun sijil penyertaan:</p>
+  <a href="https://www.example.com/sijil" class="button" target="_blank">Muat Turun Sijil</a>
+</section>
 
-      if (user === correct) {
-        zone.classList.add('correct');
-        zone.classList.remove('wrong');
-      } else {
-        zone.classList.add('wrong');
-        zone.classList.remove('correct');
-      }
-    });
-  }
-</script>
-
-</body>
-</html>
+<footer>
+  &copy; 2025 Modul E-M.A.T.A | Matematik Tingkatan 2
+</footer>
 
 
-    <section id="guru">
-      <h2>👩‍🏫 Ruang Guru</h2>
-      <p>Khas untuk guru mengakses:</p>
-      <ul>
-        <li>RPH pengajaran topik Pemfaktoran</li>
-        <li>Slaid pembentangan PowerPoint</li>
-        <li>Cadangan aktiviti bilik darjah</li>
-        <li>Jawapan latihan dan skema pemarkahan</li>
-      </ul>
-      <a href="guru.html" class="btn">Masuk Ruang Guru</a>
-    </section>
 
-  </main>
-
-  <footer>
-    &copy; 2025 E-Modul M.A.T.A. | Dibangunkan untuk KSSM Matematik Tingkatan 2
-  </footer>
-
-</body>
-</html>
